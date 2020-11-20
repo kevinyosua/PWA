@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --open --config webpack.config.js --start",
     "test-push": "node push.js",
-    "start": "npx serve -l 8080 dist",
+    "start": "npx serve -l 5000 dist",
     "lighthouse": "npx lighthouse http://localhost:8080/ --view --chrome-flags=\"--headless\" --output-path=./lighthouse_\"$(date \"+%Y-%m-%d_%H-%M-%S\")\".report.html"
   },
   "dependencies": {
@@ -32,6 +32,7 @@
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.0",
     "react-router-dom": "^5.2.0",
+    "serve": "^11.3.2",
     "style-loader": "^2.0.0",
     "web-push": "^3.4.4",
     "webpack": "^5.4.0",
